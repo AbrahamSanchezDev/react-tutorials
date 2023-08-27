@@ -80,7 +80,11 @@ const GameBoard = () => {
         winPlayer={winPlayer}
       />
       <div className="gameBoard">{initBoard()}</div>
-      <Footer onClick={initGame} onSuggestClick={suggestMove} />
+      <Footer
+        onClick={initGame}
+        onSuggestClick={suggestMove}
+        gameState={gameState}
+      />
     </>
   );
 };

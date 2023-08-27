@@ -1,13 +1,17 @@
 :root {
   --background-color: blue;
-  --board-background-color: red;
+  --board-background-color: bisque;
   --board-border-color: burlywood;
   --panel-background-color: lightgoldenrodyellow;
   --panel-border-color: burlywood;
 
   --player-no-player: white;
   --player-player1: red;
-  --player-player2: orange;
+  --player-player2: green;
+
+  --footer-button-background-color: lightblue;
+  --footer-button-border: chocolate;
+  --footer-button-background-color-hover: chocolate;
 }
 
 body {
@@ -59,19 +63,21 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 .footer button {
-  width: 140px;
+  position: relative;
+  left: 50%;
+  top: 20%;
+  width: 150px;
   height: 50px;
-  margin-left: 5px;
-  margin-top: 15px;
-  background-color: lightblue;
+
+  background-color: var(--footer-button-background-color);
   font-size: 20px;
   -webkit-box-shadow: 3px 5px 10px 2px rgba(0, 0, 0, 0.9);
   box-shadow: 3px 5px 10px 2px rgba(0, 0, 0, 0.9);
-  border: 5px solid chocolate;
+  border: 5px solid var(--footer-button-border);
   font-weight: bold;
 }
 .footer button:hover {
-  background-color: chocolate;
+  background-color: var(--footer-button-background-color-hover);
 }
 .gameBoard {
   display: grid;
